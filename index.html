@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invento Website Creator</title>
+</head>
+<body>
+    <style id="body_style">
+        button{
+    border: none;
+    background-color: rgb(0, 89, 255);
+    color: aliceblue;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    
+}
+input{
+    border: none;
+    background-color: rgb(0, 89, 255);
+    color: aliceblue;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+        .header-gui{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            color: aliceblue;
+            background: linear-gradient(to right , rgb(53, 53, 255) , rgb(255, 59, 92));
+            /* z-index: 5; */
+        }
+        .container{
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding: 40px;
+            color:white;
+        }
+    </style>
+    <div class="header">
+        Invento Website Creator GUI <button onclick="fullscreen_now()" style="float: right;height: 30px;"><img src="./images/fullscreen.svg" alt=""></button><button style="float: right;">Generate Code</button>
+    </div>
+
+<div id="website"></div>
+<div id="elem">
+    <h3>Add Elements</h3><br>
+    <button class="right" onclick="addElement('header')">Header</button>
+    <button class="right" onclick="addElement('heading')">Heading</button>
+    <button class="right" onclick="addElement('image')">Image</button>
+    <button class="right" onclick="addElement('anchor')">Anchor</button>
+    <button class="right" onclick="addElement('button')">Button</button>
+    <button class="right" onclick="addElement('input')">Input</button>
+    <button class="right" onclick="addElement('container')">Banner</button>
+    <button class="right" onclick="addElement('audio')">Audio</button>
+    <button class="right" onclick="addElement('video')">Video</button>
+    <button class="right" onclick="addElement('loader')">Loader</button>
+    <button class="right" onclick="addElement('link')">Link</button>
+    <button class="right" onclick="addElement('code')">Code</button>
+    <button class="right" onclick="addElement('textbox')">Text Box</button>
+    <button class="right" onclick="addElement('iframe')">iFrame</button>
+    <button class="right" onclick="addElement('paragraph')">Paragraph</button>
+    <button class="right" onclick="addElement('righttext')">Right Text</button>
+    <button class="right" onclick="addElement('lefttext')">Left Text</button>
+    <button class="right" onclick="addElement('checkbox')">Checkbox</button>
+</div>
+<div id="editor">
+    <div id="css"><div class="edit"  draggable="false" spellcheck="false" contenteditable id="css_body">/*Edit CSS*/</div></div>
+    <div id="js"><div class="edit"  draggable="false" spellcheck="false" contenteditable id="js_body">// Edit JS</div></div>
+</div>
+<script id="body_script">
+// Edit JS Here
+</script>
+    <script src="./script.js"></script>
+</body>
+</html>
